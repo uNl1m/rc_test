@@ -1,0 +1,31 @@
+.DS_Store
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+
+# IDEA Files #
+.idea/
+*.iml
+
+# Gradle Files #
+.gradle
+
+# Selenide list
+#build
+out
+classes
+.settings
+allure-results
+.allure
+build/reports/
+build/tmp/
+build/classes/
+build/test-results/
+build/csv
+build/resources/
+.project

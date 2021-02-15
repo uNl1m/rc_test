@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  front:
+    build: ./apprun-realworld-example-app/
+    command: npm start
+    ports:
+      - '8080:8080'
+    depends_on: 
+      - back
+  back:
+    build: ./node-express-realworld-example-app/
+    command: npm run dev 
+    ports:
+      - '3000:3000'
+  db:
+    image: klamping/realworld-mongo
+    ports:
+      - 27017:27017
+
+
