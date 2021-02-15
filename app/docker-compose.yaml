@@ -13,6 +13,8 @@ services:
     command: npm run dev 
     ports:
       - '3000:3000'
+    depends_on:
+      - db  
   db:
     image: klamping/realworld-mongo
     ports:
